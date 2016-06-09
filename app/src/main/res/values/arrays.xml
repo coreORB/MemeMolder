@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="color_names">
+        <item>@string/color_array_name_black</item>
+        <item>@string/color_array_name_white</item>
+        <item>@string/color_array_name_yellow</item>
+        <item>@string/color_array_name_red</item>
+        <item>@string/color_array_name_green</item>
+        <item>@string/color_array_name_blue</item>
+        <item>@string/color_array_name_cyan</item>
+        <item>@string/color_array_name_magenta</item>
+    </string-array>
+
+    <integer-array name="color_values">
+        <item>@color/color_array_black</item>
+        <item>@color/color_array_white</item>
+        <item>@color/color_array_yellow</item>
+        <item>@color/color_array_red</item>
+        <item>@color/color_array_green</item>
+        <item>@color/color_array_blue</item>
+        <item>@color/color_array_cyan</item>
+        <item>@color/color_array_magenta</item>
+    </integer-array>
+</resources>

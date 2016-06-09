@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.EditorFragment"
+    tools:showIn="@layout/activity_editor">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/top_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/icon_button_padding"
+            android:layout_marginEnd="@dimen/icon_button_padding"
+            android:maxLength="@integer/meme_caption_max_length"
+            android:singleLine="true"
+            android:hint="@string/fragment_editor_top_text_hint" />
+
+        <ImageButton
+            android:id="@+id/top_color_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/icon_button_padding"
+            android:layout_marginEnd="@dimen/icon_button_padding"
+            android:src="@drawable/fragment_editor_text_color" />
+
+        <ImageButton
+            android:id="@+id/top_color_outline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/fragment_editor_outline_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/bottom_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/icon_button_padding"
+            android:layout_marginEnd="@dimen/icon_button_padding"
+            android:maxLength="@integer/meme_caption_max_length"
+            android:singleLine="true"
+            android:hint="@string/fragment_editor_bottom_text_hint" />
+
+        <ImageButton
+            android:id="@+id/bottom_color_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/icon_button_padding"
+            android:layout_marginEnd="@dimen/icon_button_padding"
+            android:src="@drawable/fragment_editor_text_color" />
+
+        <ImageButton
+            android:id="@+id/bottom_color_outline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/fragment_editor_outline_color" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/photo_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_above="@id/bottom_bar">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/fragment_editor_no_photo" />
+
+        <TextView
+            android:id="@+id/no_photo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photo"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/divider"
+            android:text="@string/fragment_editor_no_photo_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
