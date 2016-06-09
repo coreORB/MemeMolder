@@ -98,8 +98,9 @@ public class MemeGenerator {
 
     public static boolean saveTempBitmap(Context appContext, Bitmap bitmap) {
         boolean result = false;
+        File dir = new File(appContext.getCacheDir(), TEMP_IMAGES_DIR_NAME);
+        dir.mkdirs();
         File file = new File(getTempFilePath(appContext));
-        file.mkdirs();
 
         FileOutputStream fos = null;
         try {
