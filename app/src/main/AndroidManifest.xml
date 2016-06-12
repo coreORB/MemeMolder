@@ -18,14 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activities.ResultActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".activities.EditorActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.EditorActivity" />
-        </activity>
 
 
         <provider
@@ -38,5 +30,7 @@
                 android:resource="@xml/filepaths" />
         </provider>
     </application>
+    <!--android:exported="true"-->
+    <!--tools:ignore="ExportedContentProvider"-->
 
 </manifest>

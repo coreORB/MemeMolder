@@ -34,6 +34,11 @@ public class MemeCaption implements Parcelable {
         colorOutline = in.readInt();
     }
 
+    public MemeCaption(MemeCaption other) {
+        text = other.text;
+        colorText = other.colorText;
+        colorOutline = other.colorOutline;
+    }
 
     public String getText() {
         return text;

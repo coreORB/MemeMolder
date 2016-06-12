@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_editor_action_clear">Wyczyść</string>
+    <string name="activity_editor_action_share">Udostępnij</string>
+
+    <string name="error_save_meme">Błąd podczas zapisu Memu, spróbuj ponownie</string>
+    <string name="error_no_photo">A co jeśli Ci powiem, ze poprawny meme powinien mieć ZDJĘCIE?</string>
+    <string name="error_no_text">A co jeśli Ci powiem, ze poprawny meme powinien mieć TEKST?</string>
+
+    <string name="fragment_editor_top_text_hint">Górny tekst</string>
+    <string name="fragment_editor_bottom_text_hint">Dolny tekst</string>
+    <string name="fragment_editor_no_photo_text">Tapnij tutaj, aby dodać/zmienić zdjęcie</string>
+
+    <string name="fragment_editor_share_intent_text">Ogarnij mój świetny, nowy meme!</string>
+    <string name="fragment_editor_share_intent_title">Udostępnij swój meme</string>
+
+    <string name="fragment_editor_toast_message">Meme już jest pusty!</string>
+    <string name="fragment_editor_snackbar_message">Meme wyczyszczony!</string>
+    <string name="fragment_editor_snackbar_action">Cofnij</string>
+
+    <string name="photo_dialog_title">Wybierz zdjęcie…</string>
+
+    <string name="color_array_name_black">Czarny</string>
+    <string name="color_array_name_white">Biały</string>
+    <string name="color_array_name_yellow">Żółty</string>
+    <string name="color_array_name_red">Czerwony</string>
+    <string name="color_array_name_green">Zielony</string>
+    <string name="color_array_name_blue">Niebieski</string>
+    <string name="color_array_name_cyan">Turkusowy</string>
+    <string name="color_array_name_magenta">Magenta</string>
+
+</resources>

@@ -32,7 +32,7 @@ public class MemeGenerator {
     private static int TEXT_LENGTH;
 
     private static final String TEMP_IMAGES_DIR_NAME = "images";
-    private static final String TEMP_BITMAP_FILENAME = "tempMeme.jpg";
+    private static final String TEMP_BITMAP_FILENAME = "meme.jpg";
 
     public static Bitmap createMeme(Context context, @NonNull Meme meme) {
         TEXT_LENGTH = context.getResources().getInteger(R.integer.meme_caption_max_length);

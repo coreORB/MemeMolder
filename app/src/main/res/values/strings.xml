@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">MemeMolder</string>
-    <string name="activity_main_action_clear">Clear</string>
-    <string name="activity_main_action_ok">Ok</string>
+    <string name="app_name" translatable="false">Meme Molder</string>
+    <string name="activity_editor_action_clear">Clear</string>
+    <string name="activity_editor_action_share">Share</string>
 
-    <string name="error_save_meme">Error! Meme could not be saved, try again</string>
+    <string name="error_save_meme">Error while saving Meme, try again</string>
     <string name="error_no_photo">What if I told You, that proper meme should have PHOTO?</string>
     <string name="error_no_text">What if I told You, that proper meme should have TEXT?</string>
 
@@ -11,10 +11,12 @@
     <string name="fragment_editor_bottom_text_hint">Bottom text</string>
     <string name="fragment_editor_no_photo_text">Tap here to add/change photo</string>
 
-    <string name="fragment_result_your_meme_text">Your awesome meme</string>
-    <string name="fragment_result_share">Share</string>
-    <string name="fragment_result_share_intent_title">Share Your meme</string>
-    <string name="fragment_result_share_intent_text">Check out my new awesome Meme!!!</string>
+    <string name="fragment_editor_share_intent_text">Check out my new awesome meme!</string>
+    <string name="fragment_editor_share_intent_title">Share Your meme</string>
+
+    <string name="fragment_editor_toast_message">Meme is already empty!</string>
+    <string name="fragment_editor_snackbar_message">Meme cleared!</string>
+    <string name="fragment_editor_snackbar_action">Undo</string>
 
     <string name="photo_dialog_title">Select photo…</string>
 

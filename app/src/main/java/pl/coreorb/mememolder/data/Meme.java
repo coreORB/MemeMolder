@@ -29,6 +29,22 @@ public class Meme implements Parcelable {
         bottomCaption = in.readParcelable(MemeCaption.class.getClassLoader());
     }
 
+    public Meme(Meme other) {
+        photo = other.photo;
+        topCaption = new MemeCaption(other.topCaption);
+        bottomCaption = new MemeCaption(other.bottomCaption);
+    }
+
+    public boolean isEmpty() {
+        if (photo == R.drawable.fragment_editor_no_photo
+                && topCaption.getText().equals("")
+                && bottomCaption.getText().equals("")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public
     @DrawableRes
     int getPhoto() {

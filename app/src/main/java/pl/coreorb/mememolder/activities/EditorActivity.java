@@ -1,6 +1,5 @@
 package pl.coreorb.mememolder.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -43,12 +42,8 @@ public class EditorActivity extends AppCompatActivity {
         if (id == R.id.action_clear) {
             editorFragment.clearMeme();
             return true;
-        } else if (id == R.id.action_ok) {
-            if (editorFragment.isMemeFilled()) {
-                Intent intent = new Intent(this, ResultActivity.class);
-                intent.putExtra(ResultActivity.ARG_MEME, editorFragment.getCurrentMeme());
-                startActivity(intent);
-            }
+        } else if (id == R.id.action_share) {
+            editorFragment.shareMeme();
             return true;
         }
 
